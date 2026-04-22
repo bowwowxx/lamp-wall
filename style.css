@@ -185,16 +185,58 @@ input {
    📱 手機優化
 ======================== */
 @media (max-width: 600px) {
+
+  /* 🐉 上半部縮小 */
   .hero {
-    height: 45vh;
+    height: 38vh;   /* 原本 50vh 太高 */
+    padding: 20px 10px;
   }
 
+  /* 標題 */
+  .hero h1 {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  /* 🔍 搜尋框變大好按 */
+  input {
+    width: 80%;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  /* 🪔 燈牆（關鍵🔥） */
   #wall {
-    grid-template-columns: repeat(20, 16px);
+    grid-template-columns: repeat(20, 14px); /* 原本40欄太擠 */
+    gap: 6px;
+
+    padding: 20px 10px;
+    overflow-x: auto;
   }
 
+  /* 燈放大一點 */
   .lamp {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
+
+  /* 📜 卡片 */
+  #card {
+    width: 85%;
+    font-size: 14px;
+
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+  .card-item {
+    font-size: 13px;
+  }
+
 }
